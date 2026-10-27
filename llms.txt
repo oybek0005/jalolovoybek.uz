@@ -1,0 +1,57 @@
+# Oybek Jalolov
+
+> Oybek Jalolov is a mobile developer from Uzbekistan building native (Kotlin, Swift) and Flutter apps for Android and iOS. 2+ years, 20+ published apps, including UzAutoSavdo (1M+ downloads).
+
+Oybek Jalolov (also written Jalolov Oybek; Russian: Ойбек Жалолов) is a mobile developer from Uzbekistan. He builds native Android (Kotlin, Java) and native iOS (Swift) apps as well as cross-platform Flutter apps, and has 2+ years of experience. He has published 20+ apps on Google Play and the App Store. He obtained a D-U-N-S number and registered his own organization developer accounts on Google Play and the App Store. He integrates Apple Pay and Google Pay into websites and mobile apps for online stores, hotels and other businesses in Uzbekistan, where both launched in October 2026. He is the founder of Mudarris AI (https://mudarrisai.uz). He works remotely with clients in Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Afghanistan.
+
+## Notable apps
+
+- UzAutoSavdo (UzAuto Motors JSC) — 1M+ downloads: The official UzAuto Motors app: car catalog, dealers on the map, and online booking for service and test drives. (play: https://play.google.com/store/apps/details?id=uzavtosanoat.uz, appstore: https://apps.apple.com/uz/app/uzavtosavdo/id1438093426)
+- Carsale Dealer (IT PROF COMMUNITY): The whole car dealership in one app: sales, CRM, stock, service and call center. (play: https://play.google.com/store/apps/details?id=uz.itpc.carsale, appstore: https://apps.apple.com/uz/app/carsale-dealer/id6761598674)
+- Mudarris AI (Own product · founder): An AI tutor for Uzbekistan’s DTM and national certificate exams: mock tests in the real format, explanations of mistakes and score forecasts. Oybek founded and built it and published it under his own organization developer account. (play: https://play.google.com/store/apps/details?id=uz.mudarristech.mudarrisai, appstore: https://apps.apple.com/uz/app/mudarris-ai/id6787001407, web: https://mudarrisai.uz)
+- Aqlli Hisobchi AI (AI finance assistant): An AI assistant for money, debts, tasks and habits: type an expense, say it or snap a receipt, and AI logs it for you. (play: https://play.google.com/store/apps/details?id=uz.hisobchi.aqlli_hisobchi_ai, appstore: https://apps.apple.com/uz/app/aqlli-hisobchi-ai/id6780379860)
+- Medhome (Medhome): Book a nurse or carer to your home: injections, IV drips, massage and patient care. (play: https://play.google.com/store/apps/details?id=uz.medhome.medhome.medhome, appstore: https://apps.apple.com/uz/app/medhome/id6760206618, web: https://medhome.uz)
+- Egalla (Startup): A fitness game: walk, run or cycle a loop around part of the city to claim that area, then compete on the leaderboard. (play: https://play.google.com/store/apps/details?id=uz.egalla.egalla, appstore: coming soon)
+
+## Services
+
+- Mobile app development (Android and iOS): I build fast, polished and reliable apps for Android and iOS, native (Kotlin, Swift) or Flutter, whichever fits your project best.
+- Getting a D-U-N-S number: I’ll get a D-U-N-S number for your company. Apple and Google require it to publish apps under an organization’s name.
+- Organization developer accounts on Google Play and the App Store: I’ll register your organization on Google Play Console and Apple Developer and set everything up correctly.
+- Publishing apps to Google Play and the App Store: I prepare the store listing, screenshots and privacy policy, take the app through Google and Apple review and get it live.
+- Apple Pay and Google Pay integration (website and app): I add Apple Pay and Google Pay to the website and app of your online store, hotel or service. Customers pay with one tap, without typing in a card number.
+
+## Experience
+
+- Jan 2026 – Present: Mobile Developer, IT PROF COMMUNITY. Building the mobile apps of the Carsale platform for car dealerships: a CRM for dealers and a marketplace for customers. Apps: Carsale Dealer, Carsale Marketplace
+- Oct 2025 – Jan 2026: Mobile Developer, UzAuto Motors. Built the UzAvtosalon and UzAutoSavdo apps for UzAuto Motors, including a full rewrite of UzAutoSavdo in Flutter that shipped to both stores; the app has over 1 million downloads. Apps: UzAutoSavdo, UzAvtosalon
+- Mar 2025 – Oct 2025: Mobile Developer, Metrology Scientific Center. Developed the center’s official mobile app and the GazTexnoPribor app. Apps: Metrology Scientific Center, GazTexnoPribor
+- Jul 2024 – Apr 2025: Grant winner · mobile development, GITA Programmers Academy. Won a grant and started studying mobile development. During the course I built about 20 apps, including demo versions of well-known apps. Apps: 2048, Quiz App, Puzzle 15, Translation App, Uzum Market (demo), Texnomart (demo), MaxWay (demo), Zoomrad (demo)
+
+## Service pages
+
+- [Mobile app development](https://jalolovoybek.uz/en/services/mobile-app-development/) — also in Uzbek: https://jalolovoybek.uz/xizmatlar/mobil-ilova-yaratish/, Russian: https://jalolovoybek.uz/ru/uslugi/razrabotka-mobilnyh-prilozhenij/
+- [D-U-N-S number](https://jalolovoybek.uz/en/services/duns-number/) — also in Uzbek: https://jalolovoybek.uz/xizmatlar/duns-raqam-olish/, Russian: https://jalolovoybek.uz/ru/uslugi/poluchenie-duns-nomera/
+- [Google Play and App Store developer accounts](https://jalolovoybek.uz/en/services/google-play-app-store-developer-account/) — also in Uzbek: https://jalolovoybek.uz/xizmatlar/play-market-app-store-akkaunt-ochish/, Russian: https://jalolovoybek.uz/ru/uslugi/akkaunt-razrabotchika-google-play-app-store/
+- [App publishing on Google Play and the App Store](https://jalolovoybek.uz/en/services/publish-app-google-play-app-store/) — also in Uzbek: https://jalolovoybek.uz/xizmatlar/ilovani-play-market-app-store-ga-chiqarish/, Russian: https://jalolovoybek.uz/ru/uslugi/publikaciya-prilozheniya-google-play-app-store/
+- [Apple Pay and Google Pay integration](https://jalolovoybek.uz/en/services/apple-pay-google-pay-integration/) — also in Uzbek: https://jalolovoybek.uz/xizmatlar/apple-pay-google-pay-ulash/, Russian: https://jalolovoybek.uz/ru/uslugi/podklyuchenie-apple-pay-google-pay/
+
+## Skills
+
+Kotlin, Swift, Java, Flutter, Dart, Android, iOS, Firebase, BLoC, REST API, Python, FastAPI, PostgreSQL, Oracle PL/SQL, Docker, Azure, Git, GitHub, Google Play Console, App Store Connect
+
+## Pages
+
+- [English](https://jalolovoybek.uz/en/)
+- [O‘zbekcha](https://jalolovoybek.uz/)
+- [Русский](https://jalolovoybek.uz/ru/)
+
+## Contact
+
+- Telegram: https://t.me/Oybek_Jalolov
+- Phone: +998918270005
+- Email: jalolovoybek0005@gmail.com
+- LinkedIn: https://www.linkedin.com/in/oybek-jalolov-376130335/
+- GitHub: https://github.com/oybek0005
+
+Last updated: 2026-10-27

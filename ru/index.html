@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик Android и iOS</title>
+<meta name="description" content="Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик из Узбекистана: нативные (Kotlin, Swift) и Flutter-приложения для Android и iOS, 2+ года опыта, 20+ приложений, включая UzAutoSavdo (1 млн+ загрузок).">
+<meta name="author" content="Oybek Jalolov">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://jalolovoybek.uz/ru/">
+<link rel="alternate" hreflang="uz" href="https://jalolovoybek.uz/"><link rel="alternate" hreflang="en" href="https://jalolovoybek.uz/en/"><link rel="alternate" hreflang="ru" href="https://jalolovoybek.uz/ru/"><link rel="alternate" hreflang="ru-KZ" href="https://jalolovoybek.uz/ru/"><link rel="alternate" hreflang="ru-KG" href="https://jalolovoybek.uz/ru/"><link rel="alternate" hreflang="ru-TJ" href="https://jalolovoybek.uz/ru/"><link rel="alternate" hreflang="ru-TM" href="https://jalolovoybek.uz/ru/"><link rel="alternate" hreflang="en-AF" href="https://jalolovoybek.uz/en/"><link rel="alternate" hreflang="x-default" href="https://jalolovoybek.uz/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Oybek Jalolov">
+<meta property="og:title" content="Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик Android и iOS">
+<meta property="og:description" content="Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик из Узбекистана: нативные (Kotlin, Swift) и Flutter-приложения для Android и iOS, 2+ года опыта, 20+ приложений, включая UzAutoSavdo (1 млн+ загрузок).">
+<meta property="og:url" content="https://jalolovoybek.uz/ru/">
+<meta property="og:image" content="https://jalolovoybek.uz/og-ru.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="uz_UZ"><meta property="og:locale:alternate" content="en_US">
+<meta property="profile:first_name" content="Oybek">
+<meta property="profile:last_name" content="Jalolov">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик Android и iOS">
+<meta name="twitter:description" content="Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик из Узбекистана: нативные (Kotlin, Swift) и Flutter-приложения для Android и iOS, 2+ года опыта, 20+ приложений, включая UzAutoSavdo (1 млн+ загрузок).">
+<meta name="twitter:image" content="https://jalolovoybek.uz/og-ru.png">
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#09090B" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap">
+<script>document.documentElement.classList.add("js");try{var m=localStorage.getItem("theme");if(m)document.documentElement.dataset.theme=m}catch(e){}</script>
+<style>:root{--bg:#F7F7F4;--surface:#FFFFFF;--text:#0E0F11;--muted:#5E6168;--line:#E4E4DF;--chip:#EFEFEB;
+--accent:#2B59FF;--dot:rgba(14,15,17,.10);--inv-bg:#0E0F11;--inv-text:#F7F7F4;--inv-muted:#A3A6AD;
+--frame:linear-gradient(150deg,#5d6168 0%,#1d1e21 22%,#0d0e10 70%,#43464c 100%);--ease:cubic-bezier(.2,.8,.2,1);
+color-scheme:light}
+/* tungi rejim: tizim sozlamasi bo'yicha yoki tugma bilan tanlangan */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#09090B;--surface:#121316;--text:#F2F3F5;--muted:#9A9EA8;
+--line:#222429;--chip:#1A1C20;--accent:#7C9BFF;--dot:rgba(255,255,255,.07);--inv-bg:#F2F3F5;--inv-text:#09090B;
+--inv-muted:#5E6168;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#09090B;--surface:#121316;--text:#F2F3F5;--muted:#9A9EA8;
+--line:#222429;--chip:#1A1C20;--accent:#7C9BFF;--dot:rgba(255,255,255,.07);--inv-bg:#F2F3F5;--inv-text:#09090B;
+--inv-muted:#5E6168;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* fon: yulduzlar, kursor nuri, o'qish chizig'i */
+.stars{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
+.glow{position:fixed;left:-300px;top:-300px;width:600px;height:600px;border-radius:50%;z-index:-1;pointer-events:none;
+opacity:0;transition:opacity .6s;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 16%,transparent),transparent 62%)}
+.glow.on{opacity:1}
+.progress{position:fixed;left:0;right:0;top:0;height:3px;z-index:40;transform:scaleX(0);transform-origin:0 50%;
+background:linear-gradient(90deg,#7C3AED,var(--accent),#F97316);pointer-events:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);
+-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line);
+transition:transform .45s var(--ease)}
+.top.hide{transform:translateY(-100%)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{font-weight:800;text-decoration:none;letter-spacing:-.01em;margin-right:auto}
+.nav{display:flex;gap:24px;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.lang{display:flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:700}
+.lang a{padding:3px 10px;border-radius:999px;text-decoration:none;color:var(--muted)}
+.lang a[aria-current]{background:var(--text);color:var(--bg)}
+.theme{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:none;
+color:var(--text);cursor:pointer;transition:transform .5s var(--ease),border-color .2s}
+.theme:hover{border-color:var(--text);transform:rotate(25deg)}
+.theme svg{width:18px;height:18px}
+.theme .sun{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .theme .sun{display:block}:root:not([data-theme=light]) .theme .moon{display:none}}
+:root[data-theme=dark] .theme .sun{display:block}
+:root[data-theme=dark] .theme .moon{display:none}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-new(root){z-index:2}
+
+/* hero */
+.hero{position:relative;padding:56px 0 0;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--dot) 1.2px,transparent 1.2px);
+background-size:24px 24px;-webkit-mask-image:radial-gradient(70% 70% at 72% 38%,#000 20%,transparent 72%);
+mask-image:radial-gradient(70% 70% at 72% 38%,#000 20%,transparent 72%);pointer-events:none;animation:drift 9s linear infinite}
+@keyframes drift{to{background-position:24px 24px}}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--accent);font-weight:700;font-size:15px;margin-bottom:18px}
+.type:after{content:"";display:inline-block;width:2px;height:1.05em;margin-left:3px;vertical-align:-3px;background:currentColor;
+animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+h1{font-size:clamp(46px,7.4vw,88px);line-height:.96;letter-spacing:-.045em;font-weight:800}
+h1 .grad{display:block;background:linear-gradient(92deg,var(--text) 30%,var(--accent));-webkit-background-clip:text;
+background-clip:text;color:transparent}
+h1.split-done .grad{background:none;color:inherit}
+.grad .c{color:color-mix(in oklab,var(--accent) calc(var(--p,1) * 100%),var(--text))}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:560px;margin-top:24px}
+.cta{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;height:50px;padding:0 24px;border-radius:999px;font-weight:700;
+text-decoration:none;border:1px solid var(--line);background:var(--surface);
+transition:transform .2s,box-shadow .2s,translate .45s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text);
+box-shadow:0 10px 30px -10px color-mix(in srgb,var(--accent) 70%,transparent)}
+
+/* 3D sahna */
+.stage{position:relative;height:620px;touch-action:pan-y}
+.stage:before{content:"";position:absolute;inset:12% 8% 10%;border-radius:50%;filter:blur(60px);opacity:.55;
+background:radial-gradient(40% 50% at 30% 40%,#7C3AED,transparent 70%),radial-gradient(45% 55% at 70% 45%,#2B59FF,transparent 70%),
+radial-gradient(35% 40% at 55% 80%,#F97316,transparent 70%);pointer-events:none;animation:blobs 16s ease-in-out infinite alternate}
+@keyframes blobs{0%{transform:rotate(0) scale(1)}50%{transform:rotate(28deg) scale(1.12)}100%{transform:rotate(-16deg) scale(.94)}}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .8s;cursor:grab}
+.stage canvas:active{cursor:grabbing}
+.stage.ready canvas{opacity:1}
+.stack{position:absolute;inset:0;perspective:1400px;transition:opacity .6s}
+.stage.ready .stack{opacity:0;pointer-events:none}
+.stack .phone{position:absolute;top:50%;left:50%;width:min(212px,30%);--bz:7px}
+.stack .s1{transform:translate(-128%,-46%) rotateY(28deg) rotateZ(3deg)}
+.stack .s2{transform:translate(-50%,-52%) rotateY(-18deg);z-index:2;width:min(236px,34%)}
+.stack .s3{transform:translate(28%,-56%) rotateY(-32deg) rotateZ(-3deg)}
+
+/* telefon (CSS) */
+.phone{position:relative;padding:var(--bz,5px);border-radius:15%/7%;background:var(--frame);
+box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),0 0 0 1px rgba(0,0,0,.35),0 50px 70px -30px rgba(0,0,0,.6);
+transform-style:preserve-3d}
+.phone img,.phone .splash{display:block;width:100%;height:auto;aspect-ratio:600/1299;border-radius:12.5%/5.8%;object-fit:cover;
+background:#000}
+.splash{display:grid!important;place-content:center;justify-items:center;gap:12px;color:#fff;font-weight:800;text-align:center;
+padding:0 10%;font-size:14px;line-height:1.25;background:linear-gradient(165deg,var(--c),color-mix(in srgb,var(--c) 45%,#000))!important}
+.splash i{font-style:normal;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:26px;
+background:rgba(255,255,255,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:24px;border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);position:relative}
+.stat{padding:26px 0}
+.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(28px,4.4vw,46px);line-height:1.1;font-weight:800;letter-spacing:-.035em}
+.stat span{color:var(--muted);font-size:14px}
+
+/* sections */
+section{padding:96px 0 0}
+h2{font-size:clamp(30px,4.4vw,48px);line-height:1.1;letter-spacing:-.035em;font-weight:800;margin-bottom:32px}
+
+/* men haqimda: nuqtali portret */
+.about{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:64px;align-items:center}
+.dots-card{position:relative;aspect-ratio:4/5;max-height:640px;border-radius:32px;overflow:hidden;
+background:radial-gradient(70% 55% at 50% 35%,color-mix(in srgb,var(--accent) 34%,#0B0C10),#0B0C10 72%);
+box-shadow:0 40px 80px -40px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.08)}
+.dots-card:after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);
+background-size:14px 14px;pointer-events:none}
+.dots-fallback,.dots{position:absolute;inset:0;width:100%;height:100%}
+.dots-fallback{object-fit:contain;object-position:50% 100%}
+.dots{touch-action:pan-y;opacity:0;transition:opacity .6s}
+.dots.ready{opacity:1}
+.dots.ready~.dots-fallback,.dots-card:has(.dots.ready) .dots-fallback{opacity:0}
+.about-p{font-size:clamp(18px,2vw,22px);color:var(--muted);line-height:1.65}
+
+/* tajriba: vaqt shkalasi */
+.timeline{position:relative;list-style:none;padding:0;margin:0;display:grid;gap:26px}
+.timeline:before,.timeline:after{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2px;margin-left:-1px;
+border-radius:2px;background:var(--line)}
+.timeline:after{background:linear-gradient(#7C3AED,var(--accent),#F97316);transform:scaleY(var(--prog,0));transform-origin:50% 0}
+.tl-item{position:relative;width:50%;padding-right:46px}
+.tl-item:nth-child(even){margin-left:50%;padding-right:0;padding-left:46px}
+.tl-dot{position:absolute;top:30px;right:-10px;width:20px;height:20px;border-radius:50%;background:var(--bg);
+border:3px solid var(--line);z-index:1;transition:border-color .4s,box-shadow .4s,transform .4s var(--ease)}
+.tl-item:nth-child(even) .tl-dot{right:auto;left:-10px}
+.tl-item.on .tl-dot{border-color:var(--accent);transform:scale(1.15);
+box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 20%,transparent)}
+.tl-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px 28px;
+transition:border-color .3s}
+.tl-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.tl-period{font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.tl-live{display:inline-flex;align-items:center;gap:7px;color:#16A34A}
+.tl-live:before{content:"";width:8px;height:8px;border-radius:50%;background:#22C55E;animation:live 1.6s ease-out infinite}
+@keyframes live{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}100%{box-shadow:0 0 0 9px rgba(34,197,94,0)}}
+.tl-card h3{font-size:clamp(21px,2.4vw,26px);line-height:1.2;letter-spacing:-.02em}
+.tl-role{font-weight:700;margin-top:3px}
+.tl-desc{color:var(--muted);margin-top:10px}
+.tl-apps{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin-top:14px}
+.tl-apps li{font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;background:var(--chip)}
+.js [data-reveal=left]{transform:translateX(-60px)}
+.js [data-reveal=right]{transform:translateX(60px)}
+
+/* loyiha matni (umumiy) */
+.app{display:flex;gap:14px;align-items:center}
+.icon{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;color:#fff;font-weight:800;
+font-size:22px;flex:none;object-fit:cover;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),0 0 0 1px var(--line)}
+.app h3{font-size:21px;line-height:1.2;letter-spacing:-.02em}
+.client{color:var(--muted);font-size:14px}
+.metric-big b{display:block;font-size:clamp(44px,6vw,72px);line-height:1;font-weight:800;letter-spacing:-.045em;color:var(--accent)}
+.metric-big span{color:var(--muted);font-size:14px}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;
+border:1px solid var(--line);text-decoration:none;transition:translate .45s var(--ease),border-color .2s}
+a.pill:hover{border-color:var(--text)}
+.todo{border-style:dashed;color:var(--muted)}
+.soon{color:var(--muted);border-style:dashed}
+
+/* loyihalar sahnasi — JS bo'lmasa oddiy ro'yxat */
+.showcase h2{margin-bottom:0}
+.sc-items{display:grid;gap:18px;max-width:1140px;margin:32px auto 0;padding:0 20px}
+.sc-item{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:28px;display:flex;
+flex-direction:column;gap:14px}
+.sc-item p{color:var(--muted)}
+.sc-num{font-weight:800;font-size:13px;letter-spacing:.12em;color:var(--accent)}
+.sc-num span{color:var(--muted)}
+.sc-shots{display:flex;gap:12px;overflow-x:auto;padding-bottom:4px}
+.sc-shots img,.sc-shots .splash{width:150px;flex:none;border-radius:18px;aspect-ratio:600/1299}
+.sc-phones,.sc-glow,.sc-bar{display:none}
+/* sahna rejimi (main.js .sc-on qo'shadi) */
+.sc-on .sc-track{height:calc((var(--n) - 1) * 180vh + 100vh)}
+.sc-on .sc-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.sc-on .sc-items{display:block;position:absolute;inset:0;margin:0;max-width:none;padding:0;pointer-events:none}
+.sc-on .sc-item{position:absolute;top:50%;width:min(460px,38vw);background:none;border:0;padding:0;opacity:0;
+visibility:hidden;will-change:transform,opacity;gap:18px}
+.sc-on .sc-item.l{left:max(20px,calc(50% - 550px))}
+.sc-on .sc-item.r{right:max(20px,calc(50% - 550px))}
+.sc-on .sc-item.live{pointer-events:auto}
+.sc-on .sc-item h3{font-size:clamp(28px,3.4vw,46px);letter-spacing:-.035em}
+.sc-on .sc-item p{font-size:18px}
+.sc-on .sc-item .icon{width:64px;height:64px;border-radius:18px}
+.sc-on .sc-shots{display:none}
+.sc-on .sc-phones{display:block;position:absolute;inset:0;perspective:1700px}
+.sc-phone{position:absolute;left:50%;top:50%;width:var(--pw,240px);margin-left:calc(var(--pw,240px) / -2);
+margin-top:calc(var(--pw,240px) * -1.1);will-change:transform,opacity;--bz:7px}
+.sc-screen{position:relative;aspect-ratio:600/1299;border-radius:12.5%/5.8%;overflow:hidden;background:#000}
+.sc-screen .sc-layer{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;border-radius:0;object-fit:cover;opacity:0}
+.sc-on .sc-glow{display:block;position:absolute;left:50%;top:50%;width:560px;height:560px;margin:-280px 0 0 -280px;
+border-radius:50%;background-color:var(--c,#2B59FF);filter:blur(100px);opacity:.32;transition:background-color .9s;
+will-change:transform}
+/* yo'l xaritasi */
+.sc-road{position:absolute;left:0;top:0;width:100%;overflow:visible;pointer-events:none;will-change:transform}
+.road-base{fill:none;stroke:var(--line);stroke-width:14;stroke-linecap:round;opacity:.55}
+.road-dash{fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:2 14;stroke-linecap:round;opacity:.6;
+animation:roadmove 1.4s linear infinite}
+@keyframes roadmove{to{stroke-dashoffset:-32}}
+.road-fill{fill:none;stroke:url(#rg);stroke-width:4;stroke-linecap:round}
+.road-glow{fill:none;stroke:url(#rg);stroke-width:10;stroke-linecap:round;opacity:.55}
+.road-car{fill:var(--accent);filter:drop-shadow(0 0 6px var(--accent))}
+.road-car:nth-of-type(2n){fill:#F97316}
+.road-sign rect{fill:var(--surface);stroke:var(--line)}
+.road-sign text{fill:var(--text);font:700 14px Manrope,system-ui,sans-serif;letter-spacing:.01em}
+.road-pad{transition:opacity .3s}
+.pad-glow{fill:var(--pc);opacity:.28;filter:blur(14px)}
+.pad-ring{fill:color-mix(in srgb,var(--pc) 16%,transparent);stroke:var(--pc);stroke-width:2;stroke-dasharray:6 8;
+animation:roadmove 2.4s linear infinite}
+.pad-ring2{fill:none;stroke:var(--pc);stroke-width:1.5;opacity:.7}
+.pad-dot{fill:var(--pc)}
+.sc-on .sc-bar{display:block;position:absolute;left:50%;bottom:28px;width:180px;height:3px;margin-left:-90px;border-radius:3px;
+background:var(--line);overflow:hidden}
+.sc-bar i{display:block;height:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+
+/* texnologiyalar lentasi */
+.marquee{display:grid;gap:12px}
+.row{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;flex:none;gap:10px;padding:0 10px 0 0;margin:0;list-style:none;animation:marquee 45s linear infinite}
+.row.rev .track{animation-direction:reverse;animation-duration:55s}
+.row:hover .track{animation-play-state:paused}
+.track li{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;background:var(--surface);
+border:1px solid var(--line);border-radius:999px;padding:12px 20px;font-weight:700;font-size:16px}
+.track li img{width:24px;height:24px;flex:none}
+.track li.nologo:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);margin:0 8px}
+.track li.nologo:nth-child(2n):before{background:#7C3AED}
+@keyframes marquee{to{transform:translateX(-100%)}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .mono{filter:invert(1)}}
+:root[data-theme=dark] .mono{filter:invert(1)}
+
+/* taklif */
+.offer-head{max-width:780px}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.offer-head h2{margin-bottom:18px}
+.offer-p{font-size:clamp(17px,1.8vw,20px);color:var(--muted)}
+.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.offer-card:last-child:nth-child(odd){grid-column:1/-1}
+.offer-card{position:relative;isolation:isolate;overflow:hidden;background:var(--surface);border:1px solid var(--line);
+border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.offer-card:before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .4s;pointer-events:none;
+background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--accent) 18%,transparent),transparent 62%)}
+.offer-card:hover:before{opacity:1}
+.offer-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.o-top{display:flex;justify-content:space-between;align-items:center}
+.o-icon{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;color:#fff;
+background:linear-gradient(135deg,#7C3AED,#2B59FF);box-shadow:0 14px 30px -12px rgba(43,89,255,.7)}
+.o-icon svg{width:27px;height:27px}
+.o-num{font-weight:800;font-size:46px;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px var(--line)}
+.offer-card h3{font-size:clamp(21px,2.2vw,26px);line-height:1.2;letter-spacing:-.02em}
+.offer-card p{color:var(--muted)}
+.o-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.o-tags span{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;
+background:var(--chip)}
+.o-tags img,.o-tags svg{width:16px;height:16px;flex:none}
+.offer-cta{margin-top:18px;border-radius:28px;padding:34px 40px;display:flex;align-items:center;justify-content:space-between;
+gap:20px 32px;flex-wrap:wrap;border:1px solid var(--line);background-size:220% 220%;
+background-image:linear-gradient(120deg,color-mix(in srgb,#7C3AED 20%,var(--surface)),color-mix(in srgb,#2B59FF 22%,var(--surface)),
+color-mix(in srgb,#F97316 14%,var(--surface)));animation:shift 9s ease-in-out infinite alternate}
+@keyframes shift{to{background-position:100% 50%}}
+.offer-cta p{font-size:clamp(22px,2.6vw,32px);font-weight:800;letter-spacing:-.03em;line-height:1.2}
+.offer-cta .links{gap:10px}
+.offer-cta small{display:block;margin-top:8px;color:var(--muted);font-size:16px;font-weight:500;letter-spacing:0}
+.o-more{display:inline-flex;align-items:center;gap:8px;margin-top:4px;font-weight:800;font-size:15px;color:var(--accent);
+text-decoration:none;align-self:flex-start}
+.o-more span{transition:transform .35s var(--ease)}
+.o-more:hover span,.rel-card:hover span{transform:translateX(5px)}
+
+/* xizmat sahifalari */
+.svc-hero{padding-top:64px}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;color:var(--muted);margin-bottom:22px}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--text)}
+.svc h1{font-size:clamp(36px,6vw,68px);line-height:1.03;letter-spacing:-.04em;font-weight:800;max-width:940px}
+.svc .lead{max-width:820px}
+.svc-body{display:grid;gap:16px;margin-top:64px}
+.svc-body>*,.svc-faq>*{max-width:980px}
+.svc>section{margin-top:80px}
+.svc-sec{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:32px 36px}
+.svc-sec h2{font-size:clamp(23px,2.8vw,30px);margin-bottom:14px}
+.svc-sec p,.svc-ul,.svc-ol{color:var(--muted);font-size:17px;max-width:820px}
+.svc-sec p+p,.svc-sec ul+p,.svc-sec p+ul{margin-top:12px}
+.svc-ul{padding-left:0;list-style:none;display:grid;gap:10px}
+.svc-ul li{position:relative;padding-left:26px}
+.svc-ul li:before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;
+background:linear-gradient(135deg,#7C3AED,var(--accent))}
+.svc-ol{padding:0;list-style:none;counter-reset:n;display:grid;gap:12px}
+.svc-ol li{counter-increment:n;display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start}
+.svc-ol li:before{content:counter(n);width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-weight:800;
+font-size:14px;color:#fff;background:linear-gradient(135deg,#7C3AED,#2B59FF)}
+.svc-faq h2,.rel-h{font-size:clamp(26px,3.4vw,38px);margin-bottom:18px}
+.qa-list{border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line);padding:20px 0}
+.qa h3{font-size:19px;line-height:1.35;letter-spacing:-.01em}
+.qa p{color:var(--muted);margin-top:6px;max-width:820px}
+.rel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rel-card{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 24px;border-radius:22px;
+background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:800;font-size:17px;line-height:1.3;
+transition:border-color .3s}
+.rel-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.rel-card span{color:var(--accent);transition:transform .35s var(--ease)}
+.by{color:var(--muted);font-size:14px;margin-top:18px}
+.foot-svc{display:flex;flex-wrap:wrap;gap:6px 18px;order:3;flex-basis:100%}
+.foot-svc a{color:var(--muted);text-decoration:none}
+.foot-svc a:hover{color:var(--text)}
+
+/* aloqa */
+.contact{position:relative;overflow:hidden;background:var(--inv-bg);color:var(--inv-text);border-radius:32px;padding:64px 48px}
+.contact:before{content:"";position:absolute;right:-120px;top:-160px;width:420px;height:420px;border-radius:50%;
+filter:blur(70px);opacity:.5;background:radial-gradient(#2B59FF,transparent 65%),radial-gradient(60% 60% at 30% 70%,#7C3AED,transparent 70%);
+animation:blobs 14s ease-in-out infinite alternate}
+.contact>*{position:relative}
+.contact p{color:var(--inv-muted);font-size:18px;max-width:560px}
+.contact .links{margin-top:28px;gap:10px}
+.contact .btn{background:transparent;border-color:color-mix(in srgb,var(--inv-text) 25%,transparent)}
+.contact .btn.primary{background:var(--inv-text);color:var(--inv-bg);border-color:var(--inv-text)}
+.contact .todo{color:var(--inv-muted)}
+footer{padding:48px 0 56px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;
+flex-wrap:wrap;gap:8px}
+
+/* paydo bo'lish: matn harflab, bloklar pastdan / kattalashib */
+.js [data-reveal]{opacity:0;transition:opacity .9s var(--ease) calc(var(--i,0) * 110ms),transform 1.1s var(--ease) calc(var(--i,0) * 110ms)}
+.js [data-reveal=up]{transform:translateY(40px)}
+.js [data-reveal=zoom]{transform:scale(.9)}
+.js [data-reveal].in{opacity:1;transform:none}
+.js [data-split]:not(.split-done){opacity:0}
+.split-done .w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .16em;margin:0 -.04em -.16em}
+.split-done .c{display:inline-block;transform:translateY(118%) rotate(10deg);transform-origin:0 100%;
+transition:transform 1.1s var(--ease) calc(min(var(--i), 40) * 28ms + 60ms)}
+.split-done.in .c{transform:none}
+/* JS yuklanmasa — 3 soniyadan keyin hammasi ko'rinadi */
+.js:not(.motion-ok) [data-reveal],.js:not(.motion-ok) [data-split]{animation:failsafe 0s 3s forwards}
+@keyframes failsafe{to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*:before,*:after{animation:none!important;transition:none!important}
+.js [data-reveal],.js [data-split]{opacity:1!important;transform:none!important}
+.row{flex-wrap:wrap;-webkit-mask-image:none;mask-image:none}
+.track{flex-wrap:wrap}
+.track[aria-hidden],.row.rev{display:none}
+}
+
+@media (max-width:900px){
+.hero-grid{grid-template-columns:1fr;gap:0}
+.stage{height:460px;margin:8px -20px 0}
+.stack .phone{width:min(170px,30%)}
+.stack .s2{width:min(190px,34%)}
+}
+@media (max-width:760px){
+.wrap{padding:0 16px}
+.nav{display:none}
+.hero{padding-top:32px}
+.stage{height:400px;margin:0 -16px}
+.stat+.stat{padding-left:14px}
+section{padding-top:72px}
+.sc-items{padding:0 16px}
+.about{grid-template-columns:1fr;gap:32px}
+.dots-card{max-width:420px;width:100%;margin:0 auto}
+.sc-on .sc-item,.sc-on .sc-item.l,.sc-on .sc-item.r{left:12px;right:12px;top:auto;bottom:max(48px,6svh);width:auto;gap:10px;
+padding:16px;border-radius:22px;background:color-mix(in srgb,var(--bg) 72%,transparent);
+-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.sc-on .sc-item h3{font-size:26px}
+.sc-on .sc-item p{font-size:15px}
+.sc-on .sc-item .icon{width:48px;height:48px;border-radius:14px}
+.sc-on .sc-item .metric-big b{font-size:40px}
+.sc-on .sc-bar{bottom:22px}
+.offer-grid{grid-template-columns:1fr}
+.rel-grid{grid-template-columns:1fr}
+.timeline:before,.timeline:after{left:10px}
+.tl-item,.tl-item:nth-child(even){width:auto;margin-left:0;padding:0 0 0 40px}
+.tl-dot,.tl-item:nth-child(even) .tl-dot{left:0;right:auto;top:28px}
+.tl-card{padding:22px}
+.js [data-reveal=left],.js [data-reveal=right]{transform:translateX(30px)}
+.svc>section{margin-top:56px}
+.svc-sec{padding:24px 22px}
+.svc-body{margin-top:44px}
+.offer-card{padding:24px}
+.offer-cta{padding:26px 22px}
+.contact{padding:40px 24px}
+.track li{padding:10px 16px;font-size:15px}
+}
+</style>
+<script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module" src="/js/main.js"></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfilePage",
+   "@id": "https://jalolovoybek.uz/ru/#page",
+   "url": "https://jalolovoybek.uz/ru/",
+   "name": "Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик Android и iOS",
+   "inLanguage": "ru",
+   "dateModified": "2026-10-27T09:00:00+05:00",
+   "mainEntity": {
+    "@id": "https://jalolovoybek.uz/#person"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://jalolovoybek.uz/#person",
+   "name": "Oybek Jalolov",
+   "alternateName": [
+    "Jalolov Oybek",
+    "Jalolov Oybek Qodir o‘g‘li",
+    "Ойбек Жалолов",
+    "Жалолов Ойбек",
+    "Ойбек Джалолов"
+   ],
+   "givenName": "Oybek",
+   "familyName": "Jalolov",
+   "jobTitle": "Мобильный разработчик",
+   "description": "Ойбек Жалолов (Oybek Jalolov) — мобильный разработчик из Узбекистана: нативные (Kotlin, Swift) и Flutter-приложения для Android и iOS, 2+ года опыта, 20+ приложений, включая UzAutoSavdo (1 млн+ загрузок).",
+   "url": "https://jalolovoybek.uz/",
+   "nationality": {
+    "@type": "Country",
+    "name": "Uzbekistan"
+   },
+   "worksFor": [
+    {
+     "@type": "Organization",
+     "name": "IT PROF COMMUNITY"
+    },
+    {
+     "@id": "https://mudarrisai.uz/#organization"
+    }
+   ],
+   "alumniOf": [
+    {
+     "@type": "EducationalOrganization",
+     "name": "GITA Dasturchilar Akademiyasi"
+    }
+   ],
+   "knowsAbout": [
+    "Mobile app development",
+    "Native Android development",
+    "Native iOS development",
+    "Android",
+    "iOS",
+    "Kotlin",
+    "Swift",
+    "Java",
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "Docker",
+    "Google Play publishing",
+    "App Store publishing",
+    "D-U-N-S number",
+    "Apple Pay integration",
+    "Google Pay integration",
+    "Python",
+    "FastAPI"
+   ],
+   "image": "https://jalolovoybek.uz/oybek.jpg",
+   "sameAs": [
+    "https://t.me/Oybek_Jalolov",
+    "https://www.linkedin.com/in/oybek-jalolov-376130335/",
+    "https://github.com/oybek0005"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Разработка мобильных приложений (Android и iOS)",
+      "description": "Создам быстрое, красивое и надёжное приложение для Android и iOS: нативное (Kotlin, Swift) или на Flutter, как лучше для вашего проекта.",
+      "provider": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "url": "https://jalolovoybek.uz/ru/uslugi/razrabotka-mobilnyh-prilozhenij/",
+      "areaServed": [
+       {
+        "@type": "Country",
+        "name": "Uzbekistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kazakhstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kyrgyzstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Tajikistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Turkmenistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Afghanistan"
+       }
+      ]
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Получение номера D-U-N-S",
+      "description": "Получу D-U-N-S для вашей компании. Без него Apple и Google не дадут публиковать приложения от имени организации.",
+      "provider": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "url": "https://jalolovoybek.uz/ru/uslugi/poluchenie-duns-nomera/",
+      "areaServed": [
+       {
+        "@type": "Country",
+        "name": "Uzbekistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kazakhstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kyrgyzstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Tajikistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Turkmenistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Afghanistan"
+       }
+      ]
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Аккаунты организации в Google Play и App Store",
+      "description": "Зарегистрирую вашу организацию в Google Play Console и Apple Developer и всё правильно настрою.",
+      "provider": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "url": "https://jalolovoybek.uz/ru/uslugi/akkaunt-razrabotchika-google-play-app-store/",
+      "areaServed": [
+       {
+        "@type": "Country",
+        "name": "Uzbekistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kazakhstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kyrgyzstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Tajikistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Turkmenistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Afghanistan"
+       }
+      ]
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Публикация приложений в Google Play и App Store",
+      "description": "Подготовлю страницу в магазине, скриншоты и политику конфиденциальности, проведу через проверку Google и Apple и опубликую.",
+      "provider": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "url": "https://jalolovoybek.uz/ru/uslugi/publikaciya-prilozheniya-google-play-app-store/",
+      "areaServed": [
+       {
+        "@type": "Country",
+        "name": "Uzbekistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kazakhstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kyrgyzstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Tajikistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Turkmenistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Afghanistan"
+       }
+      ]
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Подключение Apple Pay и Google Pay (сайт и приложение)",
+      "description": "Подключу оплату через Apple Pay и Google Pay к сайту и приложению вашего интернет-магазина, отеля или сервиса. Клиент платит в одно касание, не вводя номер карты.",
+      "provider": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "url": "https://jalolovoybek.uz/ru/uslugi/podklyuchenie-apple-pay-google-pay/",
+      "areaServed": [
+       {
+        "@type": "Country",
+        "name": "Uzbekistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kazakhstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Kyrgyzstan"
+       },
+       {
+        "@type": "Country",
+        "name": "Tajikistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Turkmenistan"
+       },
+       {
+        "@type": "Country",
+        "name": "Afghanistan"
+       }
+      ]
+     }
+    }
+   ],
+   "email": "mailto:jalolovoybek0005@gmail.com",
+   "telephone": "+998918270005"
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://mudarrisai.uz/#organization",
+   "name": "Mudarris AI",
+   "url": "https://mudarrisai.uz",
+   "founder": {
+    "@id": "https://jalolovoybek.uz/#person"
+   }
+  },
+  {
+   "@type": "ItemList",
+   "name": "Проекты",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "UzAutoSavdo",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "ShoppingApplication",
+      "description": "Официальное приложение UzAuto Motors: каталог автомобилей, дилеры на карте, онлайн-запись на сервис и тест-драйв.",
+      "contributor": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "UzAuto Motors"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uzavtosanoat.uz",
+      "sameAs": [
+       "https://apps.apple.com/uz/app/uzavtosavdo/id1438093426"
+      ]
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "Carsale Dealer",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "BusinessApplication",
+      "description": "Весь автосалон в одном приложении: продажи, CRM, склад, сервис и колл-центр.",
+      "contributor": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "IT PROF COMMUNITY"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uz.itpc.carsale",
+      "sameAs": [
+       "https://apps.apple.com/uz/app/carsale-dealer/id6761598674"
+      ]
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "Mudarris AI",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "EducationalApplication",
+      "description": "ИИ-репетитор для подготовки к DTM и национальному сертификату: пробные тесты в реальном формате, разбор ошибок и прогноз баллов. Опубликован через мой аккаунт организации.",
+      "creator": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@id": "https://mudarrisai.uz/#organization"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uz.mudarristech.mudarrisai",
+      "sameAs": [
+       "https://apps.apple.com/uz/app/mudarris-ai/id6787001407"
+      ]
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "Aqlli Hisobchi AI",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "FinanceApplication",
+      "description": "ИИ-помощник для денег, долгов, задач и привычек: напишите расход, скажите его вслух или сфотографируйте чек, остальное ИИ сделает сам.",
+      "contributor": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "Mudarris Tech"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uz.hisobchi.aqlli_hisobchi_ai",
+      "sameAs": [
+       "https://apps.apple.com/uz/app/aqlli-hisobchi-ai/id6780379860"
+      ]
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "Medhome",
+      "operatingSystem": "Android, iOS",
+      "applicationCategory": "MedicalApplication",
+      "description": "Вызов медсестры или сиделки на дом: уколы, капельницы, массаж и уход за больными.",
+      "contributor": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "Medhome"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uz.medhome.medhome.medhome",
+      "sameAs": [
+       "https://apps.apple.com/uz/app/medhome/id6760206618"
+      ]
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "item": {
+      "@type": "MobileApplication",
+      "name": "Egalla",
+      "operatingSystem": "Android",
+      "applicationCategory": "HealthApplication",
+      "description": "Фитнес-игра: пройдите, пробегите или проедьте на велосипеде круг по району города, захватите его и соревнуйтесь в рейтинге.",
+      "contributor": {
+       "@id": "https://jalolovoybek.uz/#person"
+      },
+      "publisher": {
+       "@type": "Organization",
+       "name": "Egalla"
+      },
+      "url": "https://play.google.com/store/apps/details?id=uz.egalla.egalla"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<canvas class="stars" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+<header class="top"><div class="wrap">
+<a class="brand" href="/ru/">Ойбек Жалолов</a>
+<nav class="nav" aria-label="Проекты">
+<a href="#about">Обо мне</a><a href="#experience">Опыт</a><a href="#projects">Проекты</a><a href="#offer">Услуги</a><a href="#contact">Контакты</a>
+</nav>
+<nav class="lang" aria-label="Language"><a href="/" hreflang="uz" lang="uz">UZ</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/ru/" hreflang="ru" lang="ru" aria-current="page">RU</a></nav>
+<button class="theme" type="button" aria-label="Светлая / тёмная тема" title="Светлая / тёмная тема"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div></header>
+<main>
+<div class="hero"><div class="wrap">
+<div class="hero-grid">
+<div>
+<p class="eyebrow" data-reveal="up"><span>Мобильный разработчик · <span class="type" data-words="[&quot;Android и iOS&quot;, &quot;Kotlin&quot;, &quot;Swift&quot;, &quot;Flutter&quot;, &quot;Google Play&quot;, &quot;App Store&quot;]">Android и iOS</span></span></p>
+<h1 data-split>Ойбек <span class="grad">Жалолов</span></h1>
+<p class="lead" data-reveal="up" style="--i:3">Создаю нативные (Kotlin, Swift) и Flutter-приложения для Android и iOS и довожу их до публикации в Google Play и App Store. Более 2 лет опыта и 20+ опубликованных приложений, среди них UzAutoSavdo с более чем 1 млн загрузок.</p>
+<div class="cta" data-reveal="up" style="--i:4"><a class="btn primary" href="#contact">Связаться</a><a class="btn" href="#projects">Проекты</a></div>
+</div>
+<div class="stage" id="stage" data-reveal="zoom" style="--i:2" data-phones="[{&quot;src&quot;:&quot;/img/apps/mudarris-ai-1.webp&quot;,&quot;href&quot;:&quot;#p-mudarris-ai&quot;},{&quot;src&quot;:&quot;/img/apps/carsale-dealer-1.webp&quot;,&quot;href&quot;:&quot;#p-carsale-dealer&quot;},{&quot;src&quot;:&quot;/img/apps/medhome-1.webp&quot;,&quot;href&quot;:&quot;#p-medhome&quot;}]">
+<div class="stack"><div class="phone s1"><img src="/img/apps/mudarris-ai-1.webp" width="600" height="1299" alt="Экран приложения Mudarris AI" loading="lazy" decoding="async"></div><div class="phone s2"><img src="/img/apps/carsale-dealer-1.webp" width="600" height="1299" alt="Экран приложения Carsale Dealer" fetchpriority="high" decoding="async"></div><div class="phone s3"><img src="/img/apps/medhome-1.webp" width="600" height="1299" alt="Экран приложения Medhome" loading="lazy" decoding="async"></div></div>
+</div>
+</div>
+<div class="stats"><div class="stat" data-reveal="up" style="--i:3"><b data-count="2" data-suffix="+">2+</b><span>года опыта</span></div><div class="stat" data-reveal="up" style="--i:4"><b data-count="20" data-suffix="+">20+</b><span>приложений опубликовано</span></div><div class="stat" data-reveal="up" style="--i:5"><b>1 млн+</b><span>загрузок UzAutoSavdo</span></div></div>
+</div></div>
+<section id="about"><div class="wrap about">
+<div class="dots-card" data-reveal="zoom">
+<img class="dots-fallback" src="/img/portrait.webp" width="420" height="730" alt="Ойбек Жалолов, мобильный разработчик" loading="lazy">
+<canvas class="dots" data-src="/img/portrait.webp" data-radius="60" aria-hidden="true"></canvas>
+</div>
+<div><h2 data-split>Обо мне</h2><p class="about-p" data-reveal="up">Я Ойбек Жалолов, мобильный разработчик из Узбекистана. Более 2 лет создаю приложения для Android и iOS — нативные (Kotlin, Java, Swift) и на Flutter: от идеи до готового приложения в Google Play и App Store. Работал с UzAuto Motors, IT PROF COMMUNITY и Medhome, а также создал собственный продукт Mudarris AI.</p></div>
+</div></section>
+<section id="experience"><div class="wrap">
+<h2 data-split>Опыт работы</h2>
+<ol class="timeline"><li class="tl-item" data-reveal="left"><span class="tl-dot" aria-hidden="true"></span><article class="tl-card"><p class="tl-period"><time datetime="2026-01">Январь 2026</time> — <span class="tl-live">по настоящее время</span></p><h3>IT PROF COMMUNITY</h3><p class="tl-role">Мобильный разработчик</p><p class="tl-desc">Разрабатываю мобильные приложения платформы Carsale для автосалонов: CRM для дилеров и маркетплейс для покупателей.</p><ul class="tl-apps"><li>Carsale Dealer</li><li>Carsale Marketplace</li></ul></article></li><li class="tl-item" data-reveal="right"><span class="tl-dot" aria-hidden="true"></span><article class="tl-card"><p class="tl-period"><time datetime="2025-10">Октябрь 2025</time> — <time datetime="2026-01">Январь 2026</time></p><h3>UzAuto Motors</h3><p class="tl-role">Мобильный разработчик</p><p class="tl-desc">Сделал приложения UzAvtosalon и UzAutoSavdo для UzAuto Motors. Переписал UzAutoSavdo на Flutter и выпустил в магазины — у приложения более 1 млн загрузок.</p><ul class="tl-apps"><li>UzAutoSavdo</li><li>UzAvtosalon</li></ul></article></li><li class="tl-item" data-reveal="left"><span class="tl-dot" aria-hidden="true"></span><article class="tl-card"><p class="tl-period"><time datetime="2025-03">Март 2025</time> — <time datetime="2025-10">Октябрь 2025</time></p><h3>Научный центр метрологии</h3><p class="tl-role">Мобильный разработчик</p><p class="tl-desc">Разработал официальное мобильное приложение центра и приложение GazTexnoPribor.</p><ul class="tl-apps"><li>Научный центр метрологии</li><li>GazTexnoPribor</li></ul></article></li><li class="tl-item" data-reveal="right"><span class="tl-dot" aria-hidden="true"></span><article class="tl-card"><p class="tl-period"><time datetime="2024-07">Июль 2024</time> — <time datetime="2025-04">Апрель 2025</time></p><h3>Академия программистов GITA</h3><p class="tl-role">Победитель гранта · мобильная разработка</p><p class="tl-desc">Выиграл грант и начал обучение мобильной разработке. За время учёбы сделал около 20 приложений, в том числе демо-версии известных приложений.</p><ul class="tl-apps"><li>2048</li><li>Quiz App</li><li>Puzzle 15</li><li>Translation App</li><li>Uzum Market (demo)</li><li>Texnomart (demo)</li><li>MaxWay (demo)</li><li>Zoomrad (demo)</li></ul></article></li></ol>
+</div></section>
+<section id="projects" class="showcase">
+<div class="wrap"><h2 data-split>Проекты</h2></div>
+<div class="sc-track" style="--n:6">
+<div class="sc-sticky">
+<div class="sc-glow" aria-hidden="true"></div>
+<div class="sc-phones" aria-hidden="true"></div>
+<div class="sc-items"><article class="sc-item" id="p-uzautosavdo" style="--c:#1D4ED8"><div class="sc-num">01 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/uzautosavdo-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>UzAutoSavdo</h3><div class="client">АО «UzAuto Motors»</div></div></div><div class="metric-big"><b>1 млн+</b><span>загрузок</span></div><p>Официальное приложение UzAuto Motors: каталог автомобилей, дилеры на карте, онлайн-запись на сервис и тест-драйв.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uzavtosanoat.uz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><a class="pill" href="https://apps.apple.com/uz/app/uzavtosavdo/id1438093426" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</a></div><div class="sc-shots"><img src="/img/apps/uzautosavdo-1.webp" width="600" height="1299" alt="Экран приложения UzAutoSavdo" loading="lazy" decoding="async"><img src="/img/apps/uzautosavdo-2.webp" width="600" height="1299" alt="Экран приложения UzAutoSavdo" loading="lazy" decoding="async"><img src="/img/apps/uzautosavdo-3.webp" width="600" height="1299" alt="Экран приложения UzAutoSavdo" loading="lazy" decoding="async"></div></article><article class="sc-item" id="p-carsale-dealer" style="--c:#6D3BEA"><div class="sc-num">02 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/carsale-dealer-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>Carsale Dealer</h3><div class="client">IT PROF COMMUNITY</div></div></div><p>Весь автосалон в одном приложении: продажи, CRM, склад, сервис и колл-центр.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uz.itpc.carsale" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><a class="pill" href="https://apps.apple.com/uz/app/carsale-dealer/id6761598674" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</a></div><div class="sc-shots"><img src="/img/apps/carsale-dealer-1.webp" width="600" height="1299" alt="Экран приложения Carsale Dealer" loading="lazy" decoding="async"><img src="/img/apps/carsale-dealer-2.webp" width="600" height="1299" alt="Экран приложения Carsale Dealer" loading="lazy" decoding="async"><img src="/img/apps/carsale-dealer-3.webp" width="600" height="1299" alt="Экран приложения Carsale Dealer" loading="lazy" decoding="async"></div></article><article class="sc-item" id="p-mudarris-ai" style="--c:#C59A4D"><div class="sc-num">03 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/mudarris-ai-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>Mudarris AI</h3><div class="client">Собственный проект · основатель</div></div></div><p>ИИ-репетитор для подготовки к DTM и национальному сертификату: пробные тесты в реальном формате, разбор ошибок и прогноз баллов. Опубликован через мой аккаунт организации.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uz.mudarristech.mudarrisai" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><a class="pill" href="https://apps.apple.com/uz/app/mudarris-ai/id6787001407" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</a><a class="pill" href="https://mudarrisai.uz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg>Сайт</a></div><div class="sc-shots"><img src="/img/apps/mudarris-ai-1.webp" width="600" height="1299" alt="Экран приложения Mudarris AI" loading="lazy" decoding="async"><img src="/img/apps/mudarris-ai-2.webp" width="600" height="1299" alt="Экран приложения Mudarris AI" loading="lazy" decoding="async"><img src="/img/apps/mudarris-ai-3.webp" width="600" height="1299" alt="Экран приложения Mudarris AI" loading="lazy" decoding="async"></div></article><article class="sc-item" id="p-aqlli-hisobchi" style="--c:#D4A537"><div class="sc-num">04 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/aqlli-hisobchi-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>Aqlli Hisobchi AI</h3><div class="client">ИИ-помощник по финансам</div></div></div><p>ИИ-помощник для денег, долгов, задач и привычек: напишите расход, скажите его вслух или сфотографируйте чек, остальное ИИ сделает сам.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uz.hisobchi.aqlli_hisobchi_ai" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><a class="pill" href="https://apps.apple.com/uz/app/aqlli-hisobchi-ai/id6780379860" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</a></div><div class="sc-shots"><img src="/img/apps/aqlli-hisobchi-1.webp" width="600" height="1299" alt="Экран приложения Aqlli Hisobchi AI" loading="lazy" decoding="async"><img src="/img/apps/aqlli-hisobchi-2.webp" width="600" height="1299" alt="Экран приложения Aqlli Hisobchi AI" loading="lazy" decoding="async"><img src="/img/apps/aqlli-hisobchi-3.webp" width="600" height="1299" alt="Экран приложения Aqlli Hisobchi AI" loading="lazy" decoding="async"></div></article><article class="sc-item" id="p-medhome" style="--c:#DB2777"><div class="sc-num">05 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/medhome-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>Medhome</h3><div class="client">Medhome</div></div></div><p>Вызов медсестры или сиделки на дом: уколы, капельницы, массаж и уход за больными.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uz.medhome.medhome.medhome" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><a class="pill" href="https://apps.apple.com/uz/app/medhome/id6760206618" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</a><a class="pill" href="https://medhome.uz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg>Сайт</a></div><div class="sc-shots"><img src="/img/apps/medhome-1.webp" width="600" height="1299" alt="Экран приложения Medhome" loading="lazy" decoding="async"><img src="/img/apps/medhome-2.webp" width="600" height="1299" alt="Экран приложения Medhome" loading="lazy" decoding="async"><img src="/img/apps/medhome-3.webp" width="600" height="1299" alt="Экран приложения Medhome" loading="lazy" decoding="async"></div></article><article class="sc-item" id="p-egalla" style="--c:#059669"><div class="sc-num">06 <span>/ 06</span></div><div class="app"><img class="icon" src="/img/apps/egalla-icon.webp" width="52" height="52" alt="" loading="lazy"><div><h3>Egalla</h3><div class="client">Стартап</div></div></div><p>Фитнес-игра: пройдите, пробегите или проедьте на велосипеде круг по району города, захватите его и соревнуйтесь в рейтинге.</p><div class="links"><a class="pill" href="https://play.google.com/store/apps/details?id=uz.egalla.egalla" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</a><span class="pill soon"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store · скоро</span></div><div class="sc-shots"><img src="/img/apps/egalla-1.webp" width="600" height="1299" alt="Экран приложения Egalla" loading="lazy" decoding="async"><img src="/img/apps/egalla-2.webp" width="600" height="1299" alt="Экран приложения Egalla" loading="lazy" decoding="async"><img src="/img/apps/egalla-3.webp" width="600" height="1299" alt="Экран приложения Egalla" loading="lazy" decoding="async"></div></article></div>
+<div class="sc-bar" aria-hidden="true"><i></i></div>
+</div>
+</div>
+</section>
+<section id="skills"><div class="wrap">
+<h2 data-split>Технологии</h2>
+</div>
+<div class="marquee" data-reveal="up">
+<div class="row"><ul class="track"><li><img src="/img/tech/kotlin.svg" width="24" height="24" alt="">Kotlin</li><li><img src="/img/tech/swift.svg" width="24" height="24" alt="">Swift</li><li><img src="/img/tech/java.svg" width="24" height="24" alt="">Java</li><li><img src="/img/tech/flutter.svg" width="24" height="24" alt="">Flutter</li><li><img src="/img/tech/dart.svg" width="24" height="24" alt="">Dart</li><li><img src="/img/tech/android.svg" width="24" height="24" alt="">Android</li><li><img src="/img/tech/apple.svg" width="24" height="24" alt="" class="mono">iOS</li><li><img src="/img/tech/firebase.svg" width="24" height="24" alt="">Firebase</li><li class="nologo">BLoC</li><li class="nologo">REST API</li><li><img src="/img/tech/python.svg" width="24" height="24" alt="">Python</li><li><img src="/img/tech/fastapi.svg" width="24" height="24" alt="">FastAPI</li><li><img src="/img/tech/postgresql.svg" width="24" height="24" alt="">PostgreSQL</li><li><img src="/img/tech/oracle.svg" width="24" height="24" alt="">Oracle PL/SQL</li><li><img src="/img/tech/docker.svg" width="24" height="24" alt="">Docker</li><li><img src="/img/tech/azure.svg" width="24" height="24" alt="">Azure</li><li><img src="/img/tech/git.svg" width="24" height="24" alt="">Git</li><li><img src="/img/tech/github.svg" width="24" height="24" alt="" class="mono">GitHub</li><li><img src="/img/tech/si-googleplay.svg" width="24" height="24" alt="" class="mono">Google Play Console</li><li><img src="/img/tech/si-appstore.svg" width="24" height="24" alt="" class="mono">App Store Connect</li></ul><ul class="track" aria-hidden="true"><li><img src="/img/tech/kotlin.svg" width="24" height="24" alt="">Kotlin</li><li><img src="/img/tech/swift.svg" width="24" height="24" alt="">Swift</li><li><img src="/img/tech/java.svg" width="24" height="24" alt="">Java</li><li><img src="/img/tech/flutter.svg" width="24" height="24" alt="">Flutter</li><li><img src="/img/tech/dart.svg" width="24" height="24" alt="">Dart</li><li><img src="/img/tech/android.svg" width="24" height="24" alt="">Android</li><li><img src="/img/tech/apple.svg" width="24" height="24" alt="" class="mono">iOS</li><li><img src="/img/tech/firebase.svg" width="24" height="24" alt="">Firebase</li><li class="nologo">BLoC</li><li class="nologo">REST API</li><li><img src="/img/tech/python.svg" width="24" height="24" alt="">Python</li><li><img src="/img/tech/fastapi.svg" width="24" height="24" alt="">FastAPI</li><li><img src="/img/tech/postgresql.svg" width="24" height="24" alt="">PostgreSQL</li><li><img src="/img/tech/oracle.svg" width="24" height="24" alt="">Oracle PL/SQL</li><li><img src="/img/tech/docker.svg" width="24" height="24" alt="">Docker</li><li><img src="/img/tech/azure.svg" width="24" height="24" alt="">Azure</li><li><img src="/img/tech/git.svg" width="24" height="24" alt="">Git</li><li><img src="/img/tech/github.svg" width="24" height="24" alt="" class="mono">GitHub</li><li><img src="/img/tech/si-googleplay.svg" width="24" height="24" alt="" class="mono">Google Play Console</li><li><img src="/img/tech/si-appstore.svg" width="24" height="24" alt="" class="mono">App Store Connect</li></ul></div>
+<div class="row rev" aria-hidden="true"><ul class="track"><li><img src="/img/tech/si-appstore.svg" width="24" height="24" alt="" class="mono">App Store Connect</li><li><img src="/img/tech/si-googleplay.svg" width="24" height="24" alt="" class="mono">Google Play Console</li><li><img src="/img/tech/github.svg" width="24" height="24" alt="" class="mono">GitHub</li><li><img src="/img/tech/git.svg" width="24" height="24" alt="">Git</li><li><img src="/img/tech/azure.svg" width="24" height="24" alt="">Azure</li><li><img src="/img/tech/docker.svg" width="24" height="24" alt="">Docker</li><li><img src="/img/tech/oracle.svg" width="24" height="24" alt="">Oracle PL/SQL</li><li><img src="/img/tech/postgresql.svg" width="24" height="24" alt="">PostgreSQL</li><li><img src="/img/tech/fastapi.svg" width="24" height="24" alt="">FastAPI</li><li><img src="/img/tech/python.svg" width="24" height="24" alt="">Python</li><li class="nologo">REST API</li><li class="nologo">BLoC</li><li><img src="/img/tech/firebase.svg" width="24" height="24" alt="">Firebase</li><li><img src="/img/tech/apple.svg" width="24" height="24" alt="" class="mono">iOS</li><li><img src="/img/tech/android.svg" width="24" height="24" alt="">Android</li><li><img src="/img/tech/dart.svg" width="24" height="24" alt="">Dart</li><li><img src="/img/tech/flutter.svg" width="24" height="24" alt="">Flutter</li><li><img src="/img/tech/java.svg" width="24" height="24" alt="">Java</li><li><img src="/img/tech/swift.svg" width="24" height="24" alt="">Swift</li><li><img src="/img/tech/kotlin.svg" width="24" height="24" alt="">Kotlin</li></ul><ul class="track"><li><img src="/img/tech/si-appstore.svg" width="24" height="24" alt="" class="mono">App Store Connect</li><li><img src="/img/tech/si-googleplay.svg" width="24" height="24" alt="" class="mono">Google Play Console</li><li><img src="/img/tech/github.svg" width="24" height="24" alt="" class="mono">GitHub</li><li><img src="/img/tech/git.svg" width="24" height="24" alt="">Git</li><li><img src="/img/tech/azure.svg" width="24" height="24" alt="">Azure</li><li><img src="/img/tech/docker.svg" width="24" height="24" alt="">Docker</li><li><img src="/img/tech/oracle.svg" width="24" height="24" alt="">Oracle PL/SQL</li><li><img src="/img/tech/postgresql.svg" width="24" height="24" alt="">PostgreSQL</li><li><img src="/img/tech/fastapi.svg" width="24" height="24" alt="">FastAPI</li><li><img src="/img/tech/python.svg" width="24" height="24" alt="">Python</li><li class="nologo">REST API</li><li class="nologo">BLoC</li><li><img src="/img/tech/firebase.svg" width="24" height="24" alt="">Firebase</li><li><img src="/img/tech/apple.svg" width="24" height="24" alt="" class="mono">iOS</li><li><img src="/img/tech/android.svg" width="24" height="24" alt="">Android</li><li><img src="/img/tech/dart.svg" width="24" height="24" alt="">Dart</li><li><img src="/img/tech/flutter.svg" width="24" height="24" alt="">Flutter</li><li><img src="/img/tech/java.svg" width="24" height="24" alt="">Java</li><li><img src="/img/tech/swift.svg" width="24" height="24" alt="">Swift</li><li><img src="/img/tech/kotlin.svg" width="24" height="24" alt="">Kotlin</li></ul></div>
+</div>
+<div class="wrap">
+</div></section>
+<section id="offer"><div class="wrap">
+<div class="offer-head">
+<p class="kicker" data-reveal="up">Предложение</p>
+<h2 data-split>У вас идея — остальное я беру на себя</h2>
+<p class="offer-p" data-reveal="up">Беру на себя всё: от разработки приложения до публикации в Google Play и App Store. А вы занимаетесь своим бизнесом.</p>
+</div>
+<div class="offer-grid"><article class="offer-card" data-reveal="up" style="--i:0"><div class="o-top"><span class="o-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/><path d="M12 7.5l.9 1.8 1.9.3-1.4 1.3.3 1.9-1.7-.9-1.7.9.3-1.9-1.4-1.3 1.9-.3z"/></svg></span><span class="o-num">01</span></div><h3>Нужно качественное приложение?</h3><p>Создам быстрое, красивое и надёжное приложение для Android и iOS: нативное (Kotlin, Swift) или на Flutter, как лучше для вашего проекта.</p><div class="o-tags"><span><img src="/img/tech/kotlin.svg" width="16" height="16" alt="">Kotlin</span><span><img src="/img/tech/swift.svg" width="16" height="16" alt="">Swift</span><span><img src="/img/tech/flutter.svg" width="16" height="16" alt="">Flutter</span></div><a class="o-more" href="/ru/uslugi/razrabotka-mobilnyh-prilozhenij/">Подробнее<span aria-hidden="true">→</span></a></article><article class="offer-card" data-reveal="up" style="--i:1"><div class="o-top"><span class="o-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M6.5 16c.6-1.3 1.5-2 2.5-2s1.9.7 2.5 2M14 10h4M14 13.5h3"/></svg></span><span class="o-num">02</span></div><h3>Нужен номер D-U-N-S?</h3><p>Получу D-U-N-S для вашей компании. Без него Apple и Google не дадут публиковать приложения от имени организации.</p><div class="o-tags"><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>Apple</span><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google</span></div><a class="o-more" href="/ru/uslugi/poluchenie-duns-nomera/">Подробнее<span aria-hidden="true">→</span></a></article><article class="offer-card" data-reveal="up" style="--i:0"><div class="o-top"><span class="o-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5.5 6.5-5.5s5.7 2.1 6.5 5.5M18 8v6M15 11h6"/></svg></span><span class="o-num">03</span></div><h3>Нужны аккаунты в Google Play и App Store?</h3><p>Зарегистрирую вашу организацию в Google Play Console и Apple Developer и всё правильно настрою.</p><div class="o-tags"><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play Console</span><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>Apple Developer</span></div><a class="o-more" href="/ru/uslugi/akkaunt-razrabotchika-google-play-app-store/">Подробнее<span aria-hidden="true">→</span></a></article><article class="offer-card" data-reveal="up" style="--i:1"><div class="o-top"><span class="o-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15l-3-3c1.2-4.5 4.4-8.2 10-9 0 5.6-4.5 8.8-9 10"/><path d="M9 12H5l2.5-3.5H11M12 15v4l3.5-2.5V13"/><path d="M5.5 16.5c-1.5.7-2 2.6-2 4 1.4 0 3.3-.5 4-2"/></svg></span><span class="o-num">04</span></div><h3>Нужно опубликовать приложение?</h3><p>Подготовлю страницу в магазине, скриншоты и политику конфиденциальности, проведу через проверку Google и Apple и опубликую.</p><div class="o-tags"><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>Google Play</span><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8.8086 14.9194l6.1107-11.0368c.0837-.1513.1682-.302.2437-.4584.0685-.142.1267-.2854.1646-.4403.0803-.3259.0588-.6656-.066-.9767-.1238-.3095-.3417-.5678-.6201-.7355a1.4175 1.4175 0 0 0-.921-.1924c-.3207.043-.6135.1935-.8443.4288-.1094.1118-.1996.2361-.2832.369-.092.1463-.175.2979-.259.4492l-.3864.6979-.3865-.6979c-.0837-.1515-.1667-.303-.2587-.4492-.0837-.1329-.1739-.2572-.2835-.369-.2305-.2353-.5233-.3857-.844-.429a1.4181 1.4181 0 0 0-.921.1926c-.2784.1677-.4964.426-.6203.7355-.1246.311-.1461.6508-.066.9767.038.155.0962.2984.1648.4403.0753.1564.1598.307.2437.4584l1.248 2.2543-4.8625 8.7825H2.0295c-.1676 0-.3351-.0007-.5026.0092-.1522.009-.3004.0284-.448.0714-.3108.0906-.5822.2798-.7783.548-.195.2665-.3006.5929-.3006.9279 0 .3352.1057.6612.3006.9277.196.2683.4675.4575.7782.548.1477.043.296.0623.4481.0715.1675.01.335.009.5026.009h13.0974c.0171-.0357.059-.1294.1-.2697.415-1.4151-.6156-2.843-2.0347-2.843zM3.113 18.5418l-.7922 1.5008c-.0818.1553-.1644.31-.2384.4705-.067.1458-.124.293-.1611.452-.0785.3346-.0576.6834.0645 1.0029.1212.3175.3346.583.607.7549.2727.172.5891.2416.9013.1975.3139-.044.6005-.1986.8263-.4402.1072-.1148.1954-.2424.2772-.3787.0902-.1503.1714-.3059.2535-.4612L6 19.4636c-.0896-.149-.9473-1.4704-2.887-.9218m20.5861-3.0056a1.4707 1.4707 0 0 0-.779-.5407c-.1476-.0425-.2961-.0616-.4483-.0705-.1678-.0099-.3352-.0091-.503-.0091H18.648l-4.3891-7.817c-.6655.7005-.9632 1.485-1.0773 2.1976-.1655 1.0333.0367 2.0934.546 3.0004l5.2741 9.3933c.084.1494.167.299.2591.4435.0837.131.1739.2537.2836.364.231.2323.5238.3809.8449.4232.3192.0424.643-.0244.9217-.1899.2784-.1653.4968-.4204.621-.7257.1246-.3072.146-.6425.0658-.9641-.0381-.1529-.0962-.2945-.165-.4346-.0753-.1543-.1598-.303-.2438-.4524l-1.216-2.1662h1.596c.1677 0 .3351.0009.5029-.009.1522-.009.3007-.028.4483-.0705a1.4707 1.4707 0 0 0 .779-.5407A1.5386 1.5386 0 0 0 24 16.452a1.539 1.539 0 0 0-.3009-.9158Z"/></svg>App Store</span></div><a class="o-more" href="/ru/uslugi/publikaciya-prilozheniya-google-play-app-store/">Подробнее<span aria-hidden="true">→</span></a></article><article class="offer-card" data-reveal="up" style="--i:0"><div class="o-top"><span class="o-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="2" width="11" height="20" rx="2.5"/><path d="M7.5 18h2"/><path d="M17 9.5a3.5 3.5 0 0 1 0 5M19.5 7a7 7 0 0 1 0 10"/></svg></span><span class="o-num">05</span></div><h3>Нужны Apple Pay и Google Pay?</h3><p>Подключу оплату через Apple Pay и Google Pay к сайту и приложению вашего интернет-магазина, отеля или сервиса. Клиент платит в одно касание, не вводя номер карты.</p><div class="o-tags"><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>Apple Pay</span><span><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google Pay</span></div><a class="o-more" href="/ru/uslugi/podklyuchenie-apple-pay-google-pay/">Подробнее<span aria-hidden="true">→</span></a></article></div>
+<div class="offer-cta" data-reveal="zoom"><p>Всё это я сделаю для вас.</p><div class="links"><a class="btn primary" href="https://t.me/Oybek_Jalolov" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Написать в Telegram</a><a class="btn" href="tel:+998918270005"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Позвонить</a></div></div>
+</div></section>
+<section id="contact"><div class="wrap">
+<div class="contact" data-reveal="zoom">
+<h2 data-split>Контакты</h2>
+<p>Есть идея приложения? Воплотите её на высшем уровне.</p>
+<div class="links"><a class="btn primary" href="https://t.me/Oybek_Jalolov" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Telegram</a><a class="btn" href="tel:+998918270005"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+998 91 827 00 05</a><a class="btn" href="mailto:jalolovoybek0005@gmail.com"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>jalolovoybek0005@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/oybek-jalolov-376130335/" target="_blank" rel="noopener me"><svg viewBox="0 0 128 128" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"/></svg>LinkedIn</a><a class="btn" href="https://github.com/oybek0005" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a></div>
+</div>
+</div></section>
+</main>
+<div class="wrap"><footer>
+<span>© 2026 Oybek Jalolov</span>
+<nav class="foot-svc" aria-label="Услуги"><a href="/ru/uslugi/razrabotka-mobilnyh-prilozhenij/">Разработка мобильных приложений</a><a href="/ru/uslugi/poluchenie-duns-nomera/">Получение номера D-U-N-S</a><a href="/ru/uslugi/akkaunt-razrabotchika-google-play-app-store/">Аккаунт разработчика Google Play и App Store</a><a href="/ru/uslugi/publikaciya-prilozheniya-google-play-app-store/">Публикация приложения в Google Play и App Store</a><a href="/ru/uslugi/podklyuchenie-apple-pay-google-pay/">Подключение Apple Pay и Google Pay</a></nav>
+<span>Обновлено: <time datetime="2026-10-27">27 октября 2026</time></span>
+</footer></div>
+</body>
+</html>
